@@ -1,0 +1,80 @@
+.attribution {
+  margin-top: 30px;
+  font-size: 12px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(118, 76%, 42%);
+}
+:root{
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+
+body{
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--Light-gray);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+body .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+p{
+  font-size: 15px;
+}
+.pond{
+  width:min-content;
+  background-color: var(--White);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0px 15px 30px -25px rgb(165, 165, 211);  
+}
+
+.pond .text{
+  display: flex;
+  text-align: center;
+  padding-bottom: 20px;
+  width: 300px;
+  margin: auto;
+  flex-direction: column;
+}
+.pond .h1{
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 15px;
+  color: var(--Dark-blue);
+}
+.pond p{
+  color: var(--Grayish-blue);
+  font-size: 20px;
+}
+.pond img{
+  width: 300px;
+  border-radius: 10px;
+}
+@media (max-width:350px) {
+  .pond{
+    /* width: 240px; */
+    width: min-content;
+  }
+  .pond img{
+    width: 220px;
+  }
+  .pond .text{
+    width: 220px;
+  }
+  .pond .h1{
+    font-size: 20px;
+  }
+  .pond p{
+    font-size: 15px;
+  }
+}
